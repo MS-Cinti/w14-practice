@@ -5,14 +5,12 @@ function ButtonWithHooks() {
     const [key2, setKey2] = useState(0)
 
     return (
-        <div>{ key1 }
-            <button onClick={ () => setKey1("Function component clicked.") }>
-                { key1 }
-            </button>
-            <button onClick={ () => setKey2(1) }>
-                { key2 }
-            </button>
-        </div>
+        <>
+            <div>{ key1 }</div>
+            <div>{ key2 }</div>
+            <button onClick={ () => setKey1("Function component clicked.") }>Click me</button>
+            <button onClick={ () => setKey2(2) }>Change the number</button>
+        </>
     );
 }
 
