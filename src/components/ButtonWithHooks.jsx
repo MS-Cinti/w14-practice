@@ -5,9 +5,6 @@ function ButtonWithHooks() {
     const [key2, setKey2] = useState(0)
     const [countries, setCountries] = useState([]) //a useState 2 elem hosszúságú tömbbel tér vissza!!!
 
-    
-
-    
     //ami ebben fut le, tudja, hogy nem feltétlenül kell újra lefuttatnia csak majd bizonyos esetekben
     useEffect(
         () => {
@@ -18,7 +15,7 @@ function ButtonWithHooks() {
         },
         []
     )
-
+ 
     return (
         <>
             <div>{ key1 }</div>

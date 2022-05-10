@@ -12,7 +12,7 @@ class ButtonWithClass extends Component {
         },
         countries: []
     }
-    console.log('1')
+    console.log("egy")
   }
   
   componentDidMount() {
@@ -50,7 +50,7 @@ class ButtonWithClass extends Component {
                 }}>{this.state.title.main}</button> */}
                 <button onClick={ () => {
                     this.setState(
-                        () => {
+                        () => { 
                             return {
                                 title: {
                                     main: "h1",
