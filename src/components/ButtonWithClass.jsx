@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class ButtonWithClass extends Component {
   constructor(){  //a classok alapértelmezett constructor() metódusa
-    super() //mivel extendeljük a Component Class-t ezért kell a super(), ez segít összekötni a constr. belüli dolgokat a két class között
+    super() //mivel extendeljük a Component Class-t ezért kell a super(), ez segít összekötni/meghívni a Component constr.-t és az azon belüli dolgokat is
     this.state = { //a this-el utalunk vissza a létrejövő objektumra
         key1: "This is the default state of a class component.",
         key2: 0,
